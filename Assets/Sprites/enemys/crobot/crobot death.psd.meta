@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 90dbd9eb1711bf74db4c4f359eb5e256
+guid: 9e130611c35cb7746bb28e7f37e056fa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3491923112297647643
-    second: door open_0
+      213: -8635127135497771023
+    second: crobot death_0
   - first:
-      213: 5952683511052076263
-    second: door open_1
+      213: -8864038917322276449
+    second: crobot death_1
   - first:
-      213: -5615990278950414896
-    second: door open_2
+      213: 6220282757069204359
+    second: crobot death_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,7 +95,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: door open_0
+      name: crobot death_0
       rect:
         serializedVersion: 2
         x: 0
@@ -109,14 +109,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58c91a151843a6347a8e14d039c08760
-      internalID: -3491923112297647643
+      spriteID: 824909cb41d6005459c3b83167ef230a
+      internalID: -8635127135497771023
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door open_1
+      name: crobot death_1
       rect:
         serializedVersion: 2
         x: 32
@@ -130,14 +130,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74f049f2dc2a8aa49a506a35d7bd520d
-      internalID: 5952683511052076263
+      spriteID: 7561e3cb95bc8e941b9f5327fe87e27c
+      internalID: -8864038917322276449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door open_2
+      name: crobot death_2
       rect:
         serializedVersion: 2
         x: 64
@@ -151,8 +151,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef1896a09b850d840a9ba4b3b3c0ad34
-      internalID: -5615990278950414896
+      spriteID: ae696ed79998a0d41bffb6e3d8e1b640
+      internalID: 6220282757069204359
       vertices: []
       indices: 
       edges: []

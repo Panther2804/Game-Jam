@@ -1,16 +1,13 @@
 fileFormatVersion: 2
-guid: 90dbd9eb1711bf74db4c4f359eb5e256
+guid: dbbc6c7696846c24892957cc37907a05
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3491923112297647643
-    second: door open_0
+      213: 3275221276540818639
+    second: crobot walk_0
   - first:
-      213: 5952683511052076263
-    second: door open_1
-  - first:
-      213: -5615990278950414896
-    second: door open_2
+      213: 2048306912153402433
+    second: crobot walk_1
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -95,7 +92,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: door open_0
+      name: crobot walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -109,14 +106,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58c91a151843a6347a8e14d039c08760
-      internalID: -3491923112297647643
+      spriteID: 1a1a3b8590e3abf44a699c646c8bf33d
+      internalID: 3275221276540818639
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: door open_1
+      name: crobot walk_1
       rect:
         serializedVersion: 2
         x: 32
@@ -130,29 +127,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74f049f2dc2a8aa49a506a35d7bd520d
-      internalID: 5952683511052076263
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: door open_2
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ef1896a09b850d840a9ba4b3b3c0ad34
-      internalID: -5615990278950414896
+      spriteID: c232ebc80c154e54bb1ea90be642d234
+      internalID: 2048306912153402433
       vertices: []
       indices: 
       edges: []

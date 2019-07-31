@@ -18,13 +18,20 @@ public class status : MonoBehaviour
     {
      if(health<=0)
         {
-            Instantiate(deathParticle, transform.position, Quaternion.identity);
-            deathParticle.Play();
-            Destroy(gameObject);
+            
+            Die();
         }
     }
     public void TakeDammage(int amount)
     {
         health -= amount;
+        Debug.Log(health);
     }
+    public virtual void Die()
+    {
+        Instantiate(deathParticle, transform.position, Quaternion.identity);
+        deathParticle.Play();
+        Destroy(gameObject);
+    }
+    public virtual IEnumerator Wait() { yield return new WaitForSeconds(2); }
 }

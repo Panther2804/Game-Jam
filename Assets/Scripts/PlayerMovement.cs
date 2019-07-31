@@ -37,10 +37,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Flip()
     {
-        facingRight = !facingRight;
-        Vector3 theScale = transform.localScale;
-        theScale.x *= -1;
-        transform.localScale = theScale;
+        //damit es mit projectilen functioniert
+        transform.Rotate(0f, 180f, 0);
     }
 
     void FixedUpdate()

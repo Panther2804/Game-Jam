@@ -25,6 +25,7 @@ public class playerBullet : MonoBehaviour
             collision.gameObject.GetComponent<status>().TakeDammage(bulletDammage);
             Instantiate(bulletHitEffect, transform.position, Quaternion.identity);
             bulletHitEffect.Play();
+            Destroy(gameObject);
         }
         else {
             Instantiate(bulletHitEffect, transform.position, Quaternion.identity);
