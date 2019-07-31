@@ -8,10 +8,12 @@ public class playerAttack : MonoBehaviour
     public Transform firepoint;
     public GameObject bullet;
     public ParticleSystem ShotParticle;
+    public float StartTimeBTWshot;
+    private float TimeBTWshot;
     // Start is called before the first frame update
     void Start()
     {
-        
+        TimeBTWshot = StartTimeBTWshot;
     }
 
     // Update is called once per frame
@@ -19,8 +21,13 @@ public class playerAttack : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            Shoot();
+            if (TimeBTWshot <= 0)
+            {
+                Shoot();
+                TimeBTWshot = StartTimeBTWshot;
+            }
         }
+        TimeBTWshot -= Time.deltaTime;
     }
 
     void Shoot()
