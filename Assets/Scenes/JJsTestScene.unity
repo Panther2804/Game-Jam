@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 12901576}
   m_Layer: 9
   m_Name: GameObject (1)
-  m_TagString: Untagged
+  m_TagString: floor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -546,6 +546,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2049854051 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6733363565669508572, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
+    type: 3}
+  m_PrefabInstance: {fileID: 7888937778971880789}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2049854060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2049854051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b9cb24ec87347504a98ba77006c8d099, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startDashTime: 2
 --- !u!1001 &7888937778971880789
 PrefabInstance:
   m_ObjectHideFlags: 0

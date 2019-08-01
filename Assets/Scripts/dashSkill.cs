@@ -5,10 +5,10 @@ using UnityEngine;
 public class dashSkill : MonoBehaviour
 {
     private Rigidbody2D rb;
-    public float dashSpeed;
+    
     private float dashTime;
     public float startDashTime;
-    private int direction;
+   
     // Start is called before the first frame update
     void Start()
     {
@@ -22,24 +22,26 @@ public class dashSkill : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-           
-                if (dashTime <= 0)
-                {
-                    direction = 0;
-                    dashTime = startDashTime;
-                    rb.velocity = Vector2.zero;
-                }
-                else
-                {
-                    dashTime -= Time.deltaTime;
-                }
-            
-
-            
-            
+            if (dashTime <= 0)
             {
-                rb.AddForce(new Vector2(10000f, 0f));
+
+
+
+
+
+
+                if (GetComponent<PlayerMovement>().facingRight == true)
+                {
+                    rb.AddForce(new Vector2(-20000f, 0f));
+                }
+                else if (GetComponent<PlayerMovement>().facingRight == false)
+                {
+                    rb.AddForce(new Vector2(20000f, 0f));
+                }
+                dashTime = startDashTime;
             }
+           
         }
+        dashTime -= Time.deltaTime;
     }
 }

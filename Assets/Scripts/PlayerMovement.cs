@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     Animator m_Animator;
     Rigidbody2D rb;
     public LayerMask groundLayer;
-    bool facingRight;
+   public bool facingRight;
     bool isgrounded;
     int jmpsLeft;//doppelt Jump
 
