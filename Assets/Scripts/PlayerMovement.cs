@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask groundLayer;
     bool facingRight;
     bool isgrounded;
+    int jmpsLeft;//doppelt Jump
 
     bool IsGrounded()
     {
@@ -45,30 +46,38 @@ public class PlayerMovement : MonoBehaviour
     {
         //Eingabe von a oder d
         float h = Input.GetAxis("Horizontal");
+        
         //dreht Spieler um
-        if (h > 0&&!facingRight)
+        if (h < 0&&!facingRight)
         {
+            facingRight = true;
             Flip();
         }
-        else if (h < 0 && facingRight)
+        else if (h > 0 && facingRight)
         {
             Flip();
+            facingRight = false;
         }
-        //schaut ob sich der Charakter bewegt
+       
+        //schaut ob sich der Charakter nach links oder rechts bewegt
         bool hasHorizontalInput = !Mathf.Approximately(h, 0f);
         bool isWalking = hasHorizontalInput;
+
         //setzt Animator Variable auf isWalking für Idle etc..
         m_Animator.SetBool("IsMoving", isWalking);
 
         Vector3 tempVect = new Vector3(h, 0, 0);
         //Bewegungsrichtung
         tempVect = tempVect.normalized * speed;
+       
         //bewegt den Charakter
         rb.MovePosition(rb.transform.position + tempVect);
+       
         //schaut ob Boden drunter ist
-        if (isgrounded == true)
+        if (Input.GetKeyDown("space") && jmpsLeft>0)
         {
-            rb.AddForce(new Vector2(0f, Input.GetAxisRaw("Vertical")), ForceMode2D.Impulse);
+            rb.AddForce(new Vector2(0f, Input.GetAxisRaw("Jump")*jumpForce),ForceMode2D.Impulse);
+            --jmpsLeft;
         }
     }
 
@@ -80,6 +89,8 @@ public class PlayerMovement : MonoBehaviour
         if (theCollision.gameObject.CompareTag("floor"))
         {
             isgrounded = true;
+            jmpsLeft = 2;
+            m_Animator.SetBool("IsJumping", isgrounded);
         }
     }
 
@@ -89,6 +100,8 @@ public class PlayerMovement : MonoBehaviour
         if (theCollision.gameObject.CompareTag("floor"))
         {
             isgrounded = false;
+            //Jumpanimation
+            m_Animator.SetBool("IsJumping", isgrounded);
         }
     }
 }
