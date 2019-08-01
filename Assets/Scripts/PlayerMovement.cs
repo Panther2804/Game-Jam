@@ -88,7 +88,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (theCollision.gameObject.CompareTag("floor"))
         {
-            isgrounded = true;
+           Debug.Log( isgrounded = true);
             jmpsLeft = 2;
             m_Animator.SetBool("IsJumping", isgrounded);
         }

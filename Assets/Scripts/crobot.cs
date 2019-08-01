@@ -12,7 +12,8 @@ public class crobot : status
     {
         died = false;
         anim = GetComponent<Animator>();
-        
+        XPke = camera.GetComponent<ExperienceSystem>();
+
     }
 
     // Update is called once per frame
@@ -28,6 +29,7 @@ public class crobot : status
             deathParticle.Play();
             anim.SetTrigger("die");
             StartCoroutine(Wait());
+            XPke.UpdateEx(100);
         }
     }
     public override IEnumerator Wait()
