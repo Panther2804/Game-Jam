@@ -8,12 +8,19 @@ public class dashSkill : MonoBehaviour
     
     private float dashTime;
     public float startDashTime;
+    private Animator anim;
+    public GameObject eco;
+    public Transform dashDust;
+    public ParticleSystem dashPart;
+    public TrailRenderer trail;
+    
    
     // Start is called before the first frame update
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         dashTime = startDashTime;
+        anim = GetComponent<Animator>();
 
     }
 
@@ -24,24 +31,47 @@ public class dashSkill : MonoBehaviour
         {
             if (dashTime <= 0)
             {
+                trail.enabled = true;
+                anim.SetTrigger("dash");
+                
+
+                StartCoroutine(wait());
 
 
 
-
-
-
-                if (GetComponent<PlayerMovement>().facingRight == true)
-                {
-                    rb.AddForce(new Vector2(-20000f, 0f));
-                }
-                else if (GetComponent<PlayerMovement>().facingRight == false)
-                {
-                    rb.AddForce(new Vector2(20000f, 0f));
-                }
-                dashTime = startDashTime;
             }
            
         }
         dashTime -= Time.deltaTime;
+    }
+    public IEnumerator wait()
+    {
+        yield return new WaitForSeconds(0.05f);
+        if (GetComponent<PlayerMovement>().facingRight == true)
+        {
+            Instantiate(dashPart, dashDust.position, dashDust.rotation);
+            dashPart.Play();
+                GameObject instance = (GameObject)Instantiate(eco, transform.position, transform.rotation);
+                rb.AddForce(new Vector2(-30000f, 0f));
+                Destroy(instance, 1.5f);
+                rb.velocity = Vector2.zero;
+
+            
+           
+        }
+        else if (GetComponent<PlayerMovement>().facingRight == false)
+        {
+            Instantiate(dashPart, dashDust.position, dashDust.rotation);
+            dashPart.Play();
+            GameObject instance = (GameObject)Instantiate(eco, transform.position, transform.rotation);
+                rb.AddForce(new Vector2(30000f, 0f));
+                Destroy(instance, 1.5f);
+                rb.velocity = Vector2.zero;
+            trail.enabled = false;
+
+        }
+        dashTime = startDashTime;
+        
+        
     }
 }
