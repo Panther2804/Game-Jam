@@ -12,7 +12,7 @@ public class dashSkill : MonoBehaviour
     public GameObject eco;
     public Transform dashDust;
     public ParticleSystem dashPart;
-    public TrailRenderer trail;
+   
     
    
     // Start is called before the first frame update
@@ -29,9 +29,10 @@ public class dashSkill : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
+            
             if (dashTime <= 0)
             {
-                trail.enabled = true;
+                
                 anim.SetTrigger("dash");
                 
 
@@ -52,7 +53,9 @@ public class dashSkill : MonoBehaviour
             Instantiate(dashPart, dashDust.position, dashDust.rotation);
             dashPart.Play();
                 GameObject instance = (GameObject)Instantiate(eco, transform.position, transform.rotation);
+
                 rb.AddForce(new Vector2(-30000f, 0f));
+            Debug.Log("forceApplied");
                 Destroy(instance, 1.5f);
                 rb.velocity = Vector2.zero;
 
@@ -65,9 +68,10 @@ public class dashSkill : MonoBehaviour
             dashPart.Play();
             GameObject instance = (GameObject)Instantiate(eco, transform.position, transform.rotation);
                 rb.AddForce(new Vector2(30000f, 0f));
-                Destroy(instance, 1.5f);
+            Debug.Log("forceApplied");
+            Destroy(instance, 1.5f);
                 rb.velocity = Vector2.zero;
-            trail.enabled = false;
+           
 
         }
         dashTime = startDashTime;
