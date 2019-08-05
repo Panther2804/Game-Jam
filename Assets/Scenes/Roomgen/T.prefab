@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpeningDirection: 2
+  spawned: 0
 --- !u!1 &307743883259836454
 GameObject:
   m_ObjectHideFlags: 0

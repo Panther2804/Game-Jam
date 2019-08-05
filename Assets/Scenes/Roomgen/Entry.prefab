@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpeningDirection: 2
+  spawned: 0
 --- !u!1 &258700146052362909
 GameObject:
   m_ObjectHideFlags: 0
@@ -186,6 +187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpeningDirection: 1
+  spawned: 0
 --- !u!1 &841266265324769549
 GameObject:
   m_ObjectHideFlags: 0
@@ -1739,6 +1741,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpeningDirection: 4
+  spawned: 0
 --- !u!1 &6575136825995726280
 GameObject:
   m_ObjectHideFlags: 0
@@ -1876,3 +1879,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpeningDirection: 3
+  spawned: 0
