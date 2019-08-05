@@ -1,10 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!1 &6982086628218938553
-=======
---- !u!1 &8490975277087472889
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12,7 +8,6 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   - component: {fileID: 6982086628218938552}
   m_Layer: 0
   m_Name: firePoint
@@ -55,35 +50,16 @@ GameObject:
   m_Layer: 0
   m_Name: player 1
   m_TagString: Untagged
-=======
-  - component: {fileID: 8490975277087472864}
-  - component: {fileID: 8490975277087472865}
-  - component: {fileID: 8490975277087472866}
-  - component: {fileID: 8490975277087472867}
-  - component: {fileID: 8490975277087472892}
-  - component: {fileID: 8490975277087472893}
-  - component: {fileID: 8490975277087472894}
-  - component: {fileID: 8490975277087472895}
-  - component: {fileID: 8490975277087472888}
-  m_Layer: 0
-  m_Name: player
-  m_TagString: Player
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!4 &6982086628358647268
-=======
---- !u!4 &8490975277087472864
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
   m_LocalRotation: {x: 0, y: 0.000003934026, z: 0, w: 1}
   m_LocalPosition: {x: -1.7250595, y: -0.1, z: 0}
@@ -94,29 +70,12 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &6982086628358647269
-=======
-  m_GameObject: {fileID: 8490975277087472889}
-  m_LocalRotation: {x: 0, y: 0.000003934026, z: 0, w: 1}
-  m_LocalPosition: {x: -4.75, y: 0.58, z: 0}
-  m_LocalScale: {x: 20, y: 20, z: 1}
-  m_Children:
-  - {fileID: 8490975278191073102}
-  - {fileID: 8490975277745073053}
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &8490975277087472865
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
-=======
-  m_GameObject: {fileID: 8490975277087472889}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -160,22 +119,14 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!95 &6982086628358647270
-=======
---- !u!95 &8490975277087472866
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
-=======
-  m_GameObject: {fileID: 8490975277087472889}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 8ae0cf2b524a2fd41a33e3198a47b38f, type: 2}
@@ -187,86 +138,52 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!114 &6982086628358647275
-=======
---- !u!114 &8490975277087472867
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
-=======
-  m_GameObject: {fileID: 8490975277087472889}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44bca5c29426e83409be676d0dec8eeb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   playerAnim: {fileID: 6982086628358647270}
   firepoint: {fileID: 6982086628218938552}
-=======
-  playerAnim: {fileID: 8490975277087472866}
-  firepoint: {fileID: 8490975278191073102}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   bullet: {fileID: 8666803126436965858, guid: 4bf30d2364e96254d82ad2eecfc94f27, type: 3}
   ShotParticle: {fileID: 4594366683191359268, guid: 502289d4fb3d4c74cb7d329ba57a5704,
     type: 3}
   StartTimeBTWshot: 1
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!50 &6982086628509573337
-=======
---- !u!50 &8490975277087472892
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
-=======
-  m_GameObject: {fileID: 8490975277087472889}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 0.02
   m_LinearDrag: 0
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_AngularDrag: 0
   m_GravityScale: 10
-=======
-  m_AngularDrag: 0.05
-  m_GravityScale: 2
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!58 &6982086628509573315
-=======
---- !u!58 &8490975277087472893
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
-=======
-  m_GameObject: {fileID: 8490975277087472889}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -276,21 +193,13 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.1}
   serializedVersion: 2
   m_Radius: 0.08
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!61 &6982086628509573314
-=======
---- !u!61 &8490975277087472894
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
-=======
-  m_GameObject: {fileID: 8490975277087472889}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -310,21 +219,13 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.14553483, y: 0.18389529}
   m_EdgeRadius: 0
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!114 &6982086628509573336
-=======
---- !u!114 &8490975277087472895
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
-=======
-  m_GameObject: {fileID: 8490975277087472889}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3d536602b45f9a5458caa4460e017655, type: 3}
@@ -336,29 +237,19 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   facingRight: 0
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
 --- !u!114 &5832108379605233410
-=======
---- !u!114 &8490975277087472888
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
   m_GameObject: {fileID: 6982086628358647271}
-=======
-  m_GameObject: {fileID: 8490975277087472889}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b9cb24ec87347504a98ba77006c8d099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startDashTime: 2
-<<<<<<< Updated upstream:Assets/Prefabs/Player/player 1.prefab
-=======
   eco: {fileID: 8955874930988942789, guid: 70c2b074473cd2b4395ccdac5e803fa8, type: 3}
   dashDust: {fileID: 8490975277745073053}
   dashPart: {fileID: 5784919208749107243, guid: 812ca25e244e90d4bbe1b9525226904b,
@@ -423,4 +314,3 @@ Transform:
   m_Father: {fileID: 8490975277087472864}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> Stashed changes:Assets/Prefabs/Player/player.prefab

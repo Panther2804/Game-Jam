@@ -643,7 +643,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< Updated upstream
     - target: {fileID: 5696105972248990205, guid: 44b16269349c42a4a84bf7ce1371c582,
         type: 3}
       propertyPath: m_Name
@@ -714,9 +713,6 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 6982086628358647271, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472889, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_Name
       value: player
@@ -726,97 +722,56 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -4.75
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0.58
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalRotation.y
       value: 0.000003934026
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628358647268, guid: 263a1afb049507749be226090dd4de34,
-=======
-    - target: {fileID: 8490975277087472864, guid: 3758c4f2ebb08854fa7527c1c1e390fa,
->>>>>>> Stashed changes
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
     - target: {fileID: 6982086628509573336, guid: 263a1afb049507749be226090dd4de34,
         type: 3}
       propertyPath: groundLayer.m_Bits
@@ -832,7 +787,5 @@ PrefabInstance:
       propertyPath: m_CollisionDetection
       value: 1
       objectReference: {fileID: 0}
-=======
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 263a1afb049507749be226090dd4de34, type: 3}
