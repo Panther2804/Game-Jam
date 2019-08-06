@@ -54,7 +54,7 @@ public class dashSkill : MonoBehaviour
             dashPart.Play();
                 GameObject instance = (GameObject)Instantiate(eco, transform.position, transform.rotation);
 
-                rb.AddForce(new Vector2(-30000f, 0f));
+                rb.AddForce(new Vector2(-10000f, 0f));
             Debug.Log("forceApplied");
                 Destroy(instance, 1.5f);
                 rb.velocity = Vector2.zero;
@@ -67,7 +67,7 @@ public class dashSkill : MonoBehaviour
             Instantiate(dashPart, dashDust.position, dashDust.rotation);
             dashPart.Play();
             GameObject instance = (GameObject)Instantiate(eco, transform.position, transform.rotation);
-                rb.AddForce(new Vector2(30000f, 0f));
+                rb.AddForce(new Vector2(10000f, 0f));
             Debug.Log("forceApplied");
             Destroy(instance, 1.5f);
                 rb.velocity = Vector2.zero;
