@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpeningDirection: 2
+  spawned: 0
 --- !u!1 &6493711545757500545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OpeningDirection: 3
+  spawned: 0
 --- !u!1 &8543796650190801235
 GameObject:
   m_ObjectHideFlags: 0

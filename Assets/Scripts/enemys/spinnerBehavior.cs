@@ -12,6 +12,9 @@ public class spinnerBehavior : MonoBehaviour
     public Transform projectileSpawn;
     public float StartTimeBTW;
     private float TimeBTW;
+    //shooting effects
+    public Transform shootPartPos;
+    public ParticleSystem shootPart;
     // Start is called before the first frame update
     void Start()
     {
@@ -47,6 +50,8 @@ public class spinnerBehavior : MonoBehaviour
 }
     void shoot()
     {
+        Instantiate(shootPart, shootPartPos.position, Quaternion.identity);
+        shootPart.Play();
         Instantiate(projectile, projectileSpawn.position, projectileSpawn.rotation);
     }
 }

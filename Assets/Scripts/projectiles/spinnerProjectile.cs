@@ -36,10 +36,13 @@ public class spinnerProjectile : MonoBehaviour
             Destroy(gameObject);
         }
         else
-        {if(collision.gameObject!=gameObject)
-            Instantiate(bulletHitEffect, transform.position, Quaternion.identity);
-            bulletHitEffect.Play();
-            Destroy(gameObject);
+        {
+            if (collision.gameObject != GameObject.FindGameObjectWithTag("enemy"))
+            {
+                Instantiate(bulletHitEffect, transform.position, Quaternion.identity);
+                bulletHitEffect.Play();
+                Destroy(gameObject);
+            }
         }
     }
     void DestroyProjectile()
