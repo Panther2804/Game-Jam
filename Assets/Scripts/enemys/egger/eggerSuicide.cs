@@ -5,9 +5,11 @@ using UnityEngine;
 public class eggerSuicide : MonoBehaviour
 { public int damage;
     public ParticleSystem deathPart;
+    private Animator anim;
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         StartCoroutine(wait());
         
     }
@@ -19,6 +21,7 @@ public class eggerSuicide : MonoBehaviour
     }
     public IEnumerator wait()
     {
+        anim.SetTrigger("suicide");
         yield return new WaitForSeconds(2);
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().enabled = true;
         Instantiate(deathPart, transform.position, Quaternion.identity);
