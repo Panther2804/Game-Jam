@@ -27,30 +27,30 @@ public class RoomSpawner : MonoBehaviour
             {
                 rand = Random.Range(0, templates.BottomRooms.Length);
                 Instantiate(templates.BottomRooms[rand], transform.position - new Vector3(-1,8,0), templates.BottomRooms[rand].transform.rotation);
-                Debug.Log("Created " + templates.BottomRooms[rand].name + " at " + transform.position);
+                //Debug.Log("Created " + templates.BottomRooms[rand].name + " at " + transform.position);
             }
             else if (OpeningDirection == 1)
             {
                 rand = Random.Range(0, templates.TopRooms.Length);
                 Instantiate(templates.TopRooms[rand], transform.position - new Vector3(-1, 8,0) , templates.TopRooms[rand].transform.rotation);
-                Debug.Log("Created " + templates.TopRooms[rand].name + " at " + transform.position);
+               // Debug.Log("Created " + templates.TopRooms[rand].name + " at " + transform.position);
             }
             else if (OpeningDirection == 4)
             {
                 rand = Random.Range(0, templates.LeftRooms.Length);
                 Instantiate(templates.LeftRooms[rand], transform.position - new Vector3(-1, 8,0), templates.LeftRooms[rand].transform.rotation);
-                Debug.Log("Created " + templates.LeftRooms[rand].name + " at " + transform.position);
+                //Debug.Log("Created " + templates.LeftRooms[rand].name + " at " + transform.position);
             }
             else if (OpeningDirection == 3)
             {
                 rand = Random.Range(0, templates.RightRooms.Length);
                 Instantiate(templates.RightRooms[rand], transform.position - new Vector3(-1, 8,0) , templates.RightRooms[rand].transform.rotation);
-                Debug.Log("Created " + templates.RightRooms[rand].name + " at " + transform.position);
+               //Debug.Log("Created " + templates.RightRooms[rand].name + " at " + transform.position);
             } else if (OpeningDirection == 5)
             {
                 rand = Random.Range(0, templates.StartRooms.Length);
                 Instantiate(templates.StartRooms[rand], transform.position - new Vector3(-1, 8, 0), templates.StartRooms[rand].transform.rotation);
-                Debug.Log("Created " + templates.StartRooms[rand].name + " at " + transform.position);
+                //Debug.Log("Created " + templates.StartRooms[rand].name + " at " + transform.position);
             }
             spawned = true;
         }

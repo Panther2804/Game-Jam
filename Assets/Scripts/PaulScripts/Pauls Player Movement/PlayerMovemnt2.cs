@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class PlayerMovemnt2 : MonoBehaviour //neue Interpretation des Player-Movemts, basierend auf Physi
 {
     Vector2 Move;
@@ -14,9 +16,6 @@ public class PlayerMovemnt2 : MonoBehaviour //neue Interpretation des Player-Mov
     public bool facingRight;
     bool isgrounded;
     int jmpsLeft;//doppelt Jump
-    public bool isWalking;
-    public bool vecwalk; 
-    public Vector2 tempVect;
 
     bool IsGrounded()
     {
@@ -46,10 +45,16 @@ public class PlayerMovemnt2 : MonoBehaviour //neue Interpretation des Player-Mov
         transform.Rotate(0f, 180f, 0);
     }
 
-    void Update()
+    void FixedUpdate()
     {
         //Eingabe von a oder d
-        float h = Input.GetAxis("Horizontal");
+        //float h = Input.GetAxis("Horizontal");
+        float h = 0;
+        if (Input.GetKey("d"))
+             h = 1;
+        if (Input.GetKey("a"))
+            h = -1;
+
 
         //dreht Spieler um
         if (h < 0 && !facingRight)
@@ -63,30 +68,19 @@ public class PlayerMovemnt2 : MonoBehaviour //neue Interpretation des Player-Mov
             facingRight = false;
         }
 
-
         //schaut ob sich der Charakter nach links oder rechts bewegt
         bool hasHorizontalInput = !Mathf.Approximately(h, 0f);
-        isWalking = hasHorizontalInput;
+        bool isWalking = hasHorizontalInput;
 
         //setzt Animator Variable auf isWalking für Idle etc..
         m_Animator.SetBool("IsMoving", isWalking);
 
-
-        if (Mathf.Abs(h) > 0)
-            vecwalk = true;
-        else
-        {
-            vecwalk = false;
-        }
-
-         tempVect = new Vector2(h, 0);
+        Vector3 tempVect = new Vector3(h, 0, 0);
         //Bewegungsrichtung
-        //tempVect = tempVect.normalized * speed;
+        tempVect = tempVect.normalized * speed;
 
         //bewegt den Charakter
-        rb.AddForce(tempVect * Time.deltaTime * speed);
-
-
+        rb.MovePosition(rb.transform.position + tempVect);
 
         //schaut ob Boden drunter ist
         if (Input.GetKeyDown("space") && jmpsLeft > 0)
@@ -103,7 +97,7 @@ public class PlayerMovemnt2 : MonoBehaviour //neue Interpretation des Player-Mov
     {
         if (theCollision.gameObject.CompareTag("floor"))
         {
-            isgrounded = true;
+            Debug.Log(isgrounded = true);
             jmpsLeft = 2;
             m_Animator.SetBool("IsJumping", isgrounded);
         }
