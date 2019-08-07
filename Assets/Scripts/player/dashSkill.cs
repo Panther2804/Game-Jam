@@ -57,7 +57,9 @@ public class dashSkill : MonoBehaviour
                 rb.AddForce(new Vector2(-10000f, 0f));
             Debug.Log("forceApplied");
                 Destroy(instance, 1.5f);
-                rb.velocity = Vector2.zero;
+            GetComponent<playerDarkness>().darknessUsed(0.2f);
+            Debug.Log("DarknessSubtrakted");
+            rb.velocity = Vector2.zero;
 
             
            
@@ -70,6 +72,8 @@ public class dashSkill : MonoBehaviour
                 rb.AddForce(new Vector2(10000f, 0f));
             Debug.Log("forceApplied");
             Destroy(instance, 1.5f);
+            GetComponent<playerDarkness>().darknessUsed(0.2f);
+            Debug.Log("DarknessSubtrakted");
                 rb.velocity = Vector2.zero;
            
 

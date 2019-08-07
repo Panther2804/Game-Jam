@@ -78,6 +78,7 @@ GameObject:
   - component: {fileID: 6982086628509573336}
   - component: {fileID: 5832108379605233410}
   - component: {fileID: 8036049547939887387}
+  - component: {fileID: 6983048536798673507}
   m_Layer: 0
   m_Name: player 1
   m_TagString: Untagged
@@ -303,3 +304,16 @@ MonoBehaviour:
   deathParticle: {fileID: 7826112830302542763, guid: 00755630bd443254189e34b2200d9729,
     type: 3}
   camera: {fileID: 0}
+--- !u!114 &6983048536798673507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6982086628358647271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4805ae9df1a73b44b8855c269b722c50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  darkness: 1
