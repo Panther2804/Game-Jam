@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6123459363374307232}
   - component: {fileID: 6123459363374307235}
   - component: {fileID: 6123459363374307234}
+  - component: {fileID: 3686659176041262490}
   - component: {fileID: 6123459363374307237}
   m_Layer: 0
   m_Name: Egger
@@ -64,6 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartTimeBtwJumps: 3
+  sightRange: 15
 --- !u!212 &6123459363374307232
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -154,6 +156,23 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &3686659176041262490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6123459363374307236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e647f4338de9474ea4965b40cfa4ab6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XPke: {fileID: 0}
+  health: 3
+  deathParticle: {fileID: 1683186392818708760, guid: cb307d13b6eef534cb309558ab081981,
+    type: 3}
+  camera: {fileID: 0}
 --- !u!60 &6123459363374307237
 PolygonCollider2D:
   m_ObjectHideFlags: 0

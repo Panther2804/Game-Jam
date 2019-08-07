@@ -13,6 +13,7 @@ public class eggerBehavior : MonoBehaviour
     //rotation
     private Vector3 relativePosition;
     private bool lookingLeft;
+    public float sightRange;
         
     // Start is called before the first frame update
     void Start()
@@ -44,7 +45,7 @@ public class eggerBehavior : MonoBehaviour
         #endregion
 
         #region jump
-        if (timeBtwJumps <= 0 && sticked == false)
+        if (timeBtwJumps <= 0 && sticked == false && Vector2.Distance(transform.position,target.position)<sightRange)
         {
             if (lookingLeft == true)
             {
