@@ -16,7 +16,7 @@ public class shellPieces : MonoBehaviour
     }
    public IEnumerator death()
         {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1.5f);
         Instantiate(deathpart, transform.position, Quaternion.identity);
         Destroy(gameObject);
         }

@@ -26,6 +26,8 @@ public class eggerSuicide : MonoBehaviour
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovement>().enabled = true;
         Instantiate(deathPart, transform.position, Quaternion.identity);
         deathPart.Play();
+        GameObject.FindGameObjectWithTag("Player").GetComponent<status>().TakeDammage(damage);
+       
         
        
         Destroy(gameObject);
