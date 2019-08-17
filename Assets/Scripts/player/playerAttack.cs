@@ -10,9 +10,13 @@ public class playerAttack : MonoBehaviour
     public ParticleSystem ShotParticle;
     public float StartTimeBTWshot;
     private float TimeBTWshot;
+    private Rigidbody2D rb;
+    private PlayerMovemnt2 playerMove;
     // Start is called before the first frame update
     void Start()
     {
+        playerMove = GetComponent<PlayerMovemnt2>();
+        rb = GetComponent<Rigidbody2D>();
         TimeBTWshot = StartTimeBTWshot;
     }
 
@@ -32,10 +36,18 @@ public class playerAttack : MonoBehaviour
 
     void Shoot()
     {
+        StartCoroutine(wait());
         playerAnim.SetTrigger("attack");
         Instantiate(bullet, firepoint.position, firepoint.rotation);
         Instantiate(ShotParticle, firepoint.position, firepoint.rotation);
         ShotParticle.Play();
+    }
+    public IEnumerator wait()
+    {
+        playerMove.enabled = false;
+        yield return new WaitForSeconds(0.2f);
+        playerMove.enabled = true;
+
     }
 
 }

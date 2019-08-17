@@ -32,14 +32,16 @@ public class dashSkill : MonoBehaviour
             
             if (dashTime <= 0)
             {
-                
-                anim.SetTrigger("dash");
-                
+                if (GetComponent<playerDarkness>().darkness >= 0)
+                {
 
-                StartCoroutine(wait());
-
+                    anim.SetTrigger("dash");
 
 
+                    StartCoroutine(wait());
+
+
+                }
             }
            
         }

@@ -70,12 +70,12 @@ GameObject:
   m_Component:
   - component: {fileID: 6982086628358647268}
   - component: {fileID: 6982086628358647269}
+  - component: {fileID: 5750820319754541209}
   - component: {fileID: 6982086628358647270}
   - component: {fileID: 6982086628358647275}
   - component: {fileID: 6982086628509573337}
   - component: {fileID: 6982086628509573315}
   - component: {fileID: 6982086628509573314}
-  - component: {fileID: 6982086628509573336}
   - component: {fileID: 5832108379605233410}
   - component: {fileID: 8036049547939887387}
   - component: {fileID: 6983048536798673507}
@@ -152,6 +152,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5750820319754541209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6982086628358647271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bc1246802a8c454895b92ca450f5317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 20
+  speed: 3
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 512
+  facingRight: 0
 --- !u!95 &6982086628358647270
 Animator:
   serializedVersion: 3
@@ -252,24 +270,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12653415, y: 0.16489464}
   m_EdgeRadius: 0
---- !u!114 &6982086628509573336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6982086628358647271}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d536602b45f9a5458caa4460e017655, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 6
-  speed: 0.3
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 512
-  facingRight: 0
 --- !u!114 &5832108379605233410
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -152,8 +152,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c97b19c0ba0a0834d8b503434c027399, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StopdistanceBTWcharacter: 15
-  StartdistanceBTWcharacter: 40
+  StopdistanceBTWcharacter: 10
+  StartdistanceBTWcharacter: 30
   speed: 6
   projectile: {fileID: 6330432513961502445, guid: bcea88d037797f04fbff9a81c829692e,
     type: 3}
