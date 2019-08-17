@@ -6,9 +6,12 @@ public class eggerSuicide : MonoBehaviour
 { public int damage;
     public ParticleSystem deathPart;
     private Animator anim;
+    private Animator PlayerAnim;
     // Start is called before the first frame update
     void Start()
     {
+        PlayerAnim = GameObject.FindGameObjectWithTag("Player").GetComponent<Animator>();
+        PlayerAnim.SetTrigger("stun");
         anim = GetComponent<Animator>();
         StartCoroutine(wait());
         

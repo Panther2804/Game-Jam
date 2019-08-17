@@ -9,6 +9,7 @@ TagManager:
   - floor
   - enemy
   - Rooms
+  - Lazor
   layers:
   - Default
   - TransparentFX
@@ -20,7 +21,7 @@ TagManager:
   - 
   - groundLayer
   - floor
-  - 
+  - back
   - 
   - 
   - 
