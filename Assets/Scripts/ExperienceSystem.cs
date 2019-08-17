@@ -26,7 +26,7 @@ public class ExperienceSystem : MonoBehaviour
     }
     public void UpdateEx(int xp)
     {
-        XP = xp;
+        XP += xp;
 
         int crrntLvl = (int)(0.1f * Mathf.Sqrt(XP));
 

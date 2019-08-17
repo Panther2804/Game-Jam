@@ -27,6 +27,7 @@ public class eggerSuicide : MonoBehaviour
         anim.SetTrigger("suicide");
         yield return new WaitForSeconds(2);
         GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovemnt2>().enabled = true;
+        GameObject.FindGameObjectWithTag("Player").GetComponent<playerAttack>().enabled = true;
         Instantiate(deathPart, transform.position, Quaternion.identity);
         deathPart.Play();
         GameObject.FindGameObjectWithTag("Player").GetComponent<status>().TakeDammage(damage);

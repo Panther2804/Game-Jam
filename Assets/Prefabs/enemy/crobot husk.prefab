@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6559769624620886004}
   - component: {fileID: 5189981535834031680}
   - component: {fileID: 1617005518234015630}
+  - component: {fileID: -3933182973758310179}
   - component: {fileID: 7417511402488400522}
   m_Layer: 0
   m_Name: crobot husk
@@ -103,6 +104,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-3933182973758310179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915901480518499923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0549850dbe027c4fac4d7cc626423cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!58 &7417511402488400522
 CircleCollider2D:
   m_ObjectHideFlags: 0

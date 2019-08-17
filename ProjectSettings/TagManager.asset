@@ -10,6 +10,7 @@ TagManager:
   - enemy
   - Rooms
   - Lazor
+  - xpSystem
   layers:
   - Default
   - TransparentFX

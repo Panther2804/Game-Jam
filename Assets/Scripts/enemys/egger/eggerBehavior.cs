@@ -74,6 +74,7 @@ public class eggerBehavior : MonoBehaviour
             gameObject.transform.parent = collision.gameObject.transform;
             Destroy(rb);
             GetComponentInParent<PlayerMovemnt2>().enabled = false;
+            GetComponentInParent<playerAttack>().enabled = false;
             GetComponent<eggerSuicide>().enabled = true;
             this.enabled = false;
         }

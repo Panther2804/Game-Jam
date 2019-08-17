@@ -50,13 +50,13 @@ public class dashSkill : MonoBehaviour
     public IEnumerator wait()
     {
         yield return new WaitForSeconds(0.05f);
-        if (GetComponent<PlayerMovement>().facingRight == true)
+        if (GetComponent<PlayerMovemnt2>().facingRight == true)
         {
             Instantiate(dashPart, dashDust.position, dashDust.rotation);
             dashPart.Play();
                 GameObject instance = (GameObject)Instantiate(eco, transform.position, transform.rotation);
 
-                rb.AddForce(new Vector2(-10000f, 0f));
+                rb.AddForce(new Vector2(-25000f, 0f));
             Debug.Log("forceApplied");
                 Destroy(instance, 1.5f);
             GetComponent<playerDarkness>().darknessUsed(0.5f);
@@ -66,12 +66,12 @@ public class dashSkill : MonoBehaviour
             
            
         }
-        else if (GetComponent<PlayerMovement>().facingRight == false)
+        else if (GetComponent<PlayerMovemnt2>().facingRight == false)
         {
             Instantiate(dashPart, dashDust.position, dashDust.rotation);
             dashPart.Play();
             GameObject instance = (GameObject)Instantiate(eco, transform.position, transform.rotation);
-                rb.AddForce(new Vector2(10000f, 0f));
+                rb.AddForce(new Vector2(25000f, 0f));
             Debug.Log("forceApplied");
             Destroy(instance, 1.5f);
             GetComponent<playerDarkness>().darknessUsed(0.2f);

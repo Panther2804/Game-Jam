@@ -266,7 +266,6 @@ MonoBehaviour:
   health: 3
   deathParticle: {fileID: 438591881052878817, guid: a5730cf15315f3c4fbac87e56d1c5831,
     type: 3}
-  camera: {fileID: 0}
   husk: {fileID: 915901480518499923, guid: 5ddaa991454737b4a838c69b28ae9631, type: 3}
   anim: {fileID: 6199447439184712057}
   huskSpawn: {fileID: 1183324771229148782}
@@ -305,4 +304,4 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4

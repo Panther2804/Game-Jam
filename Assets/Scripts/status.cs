@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class status : MonoBehaviour
 {
-    public ExperienceSystem XPke; 
+    public  ExperienceSystem XPke; 
     public int health;
     public ParticleSystem deathParticle;
-    public Camera camera;
+    
 
     // Start is called before the first frame update
     void Start()
     {
-        XPke = camera.GetComponent<ExperienceSystem>();
+        XPke = GameObject.FindGameObjectWithTag("xpSystem").GetComponent<ExperienceSystem>();
     }
 
     // Update is called once per frame
@@ -27,7 +27,7 @@ public class status : MonoBehaviour
     public void TakeDammage(int amount)
     {
         health -= amount;
-        Debug.Log(health);
+        
     }
     public virtual void Die()
     {
